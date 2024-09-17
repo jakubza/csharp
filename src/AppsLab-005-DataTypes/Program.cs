@@ -1,4 +1,5 @@
-﻿int age = 16;
+﻿//Vytvaranie premennych a ich testovanie
+int age = 16;
 Console.WriteLine(age);
 string name = "jakub";
 Console.WriteLine(name);
