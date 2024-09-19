@@ -60,5 +60,5 @@ if (menopouzivatela == zadanemeno && heslopouzivatela == zadaneheslo)
 }
 else
 {
-    Console.WriteLine("Heslo sa NEZHODUJE, mas este 3 pokusy inak budes elminovany");
+    Console.WriteLine("Heslo sa NEZHODUJE, mas este 3 pokusy inak budes elminovany :)");
 }
