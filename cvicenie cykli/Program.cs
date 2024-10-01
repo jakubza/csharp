@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Metrics;
 
 namespace MyApp
 {
@@ -6,7 +7,7 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            int i = 0;
+            /*int i = 0;
             while (i < 5)
             {
                 Console.WriteLine(i);
@@ -30,7 +31,7 @@ namespace MyApp
 
 
 
-            string[] names = { "Sam", "Tom", "Paulie", "Salieri" };
+            /*string[] names = { "Sam", "Tom", "Paulie", "Salieri" };
             foreach (string name in names)
             {
                 Console.WriteLine(name);
@@ -49,9 +50,44 @@ namespace MyApp
             if (b == pocetOpakovani)
            
                 break;
+            }*/
+
+
+
+           /* for (int i = 0; i <10; i++)
+            {
+                string riadok = "";
+                for (int x = 0; x < i; x++)
+                {
+                    riadok += "*";
+                }
+                Console.WriteLine(riadok);
+            }*/
+           
+            int postup = 0;
+            
+           
+            List<string> listnames = new List<string>();
+
+            listnames.Add("Jozo");
+            listnames.Add("Fero");
+            listnames.Add("Andrej");
+            listnames.Add("Martin");
+            listnames.Add("Jakub");
+            listnames.Add("Karol");
+
+            foreach (string name in listnames)
+            {
+                //Console.WriteLine(postup + "." + name);
+                postup++;
+                
+                Console.WriteLine(postup.ToString().PadLeft(3, '0') + name);
             }
 
-            
+
+
+
+
         }
 
 
