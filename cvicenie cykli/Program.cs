@@ -78,10 +78,10 @@ namespace MyApp
 
             foreach (string name in listnames)
             {
-                //Console.WriteLine(postup + "." + name);
+                Console.WriteLine(postup + "." + name);
                 postup++;
                 
-                Console.WriteLine(postup.ToString().PadLeft(3, '0') + name);
+                //Console.WriteLine(postup.ToString().PadLeft(3, '0') + name);
             }
 
 
