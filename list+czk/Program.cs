@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Xml;
 
 namespace MyApp
 {
@@ -6,19 +8,29 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Zadaj meno");
-           
-
+    
             List<string> listnames = new List<string>();
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-            listnames.Add(Console.ReadLine());
-
-            foreach (string name in listnames)
+            while (true)
             {
-                Console.WriteLine(name);
+                Console.WriteLine("\nZadaj meno");
+                var meno = Console.ReadLine();
+                Console.Clear();
+                if (meno == "quit")
+                {
+                    break;
+                }
+                else
+                {
+                    listnames.Add(meno);
+                }
+
+                Console.WriteLine("Zoznam mien");
+                foreach (var meno2 in listnames)
+                {
+                   Console.WriteLine(meno2);
+                }
             }
+           
         }
     }
 }
