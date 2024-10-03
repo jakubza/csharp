@@ -9,23 +9,23 @@ namespace MyApp
         static void Main(string[] args)
         {
     
-            List<string> listnames = new List<string>();
+            List<string> listmien = new List<string>();
             while (true)
             {
                 Console.WriteLine("\nZadaj meno");
                 var meno = Console.ReadLine();
                 Console.Clear();
-                if (meno == "quit")
+                if (meno == "exit")
                 {
                     break;
                 }
                 else
                 {
-                    listnames.Add(meno);
+                    listmien.Add(meno);
                 }
 
-                Console.WriteLine("Zoznam mien");
-                foreach (var meno2 in listnames)
+                Console.WriteLine("Zoznam mien\n");
+                foreach (var meno2 in listmien)
                 {
                    Console.WriteLine(meno2);
                 }
