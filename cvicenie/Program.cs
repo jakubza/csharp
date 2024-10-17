@@ -12,12 +12,13 @@ namespace MyApp
             
             int length = Dlzkatextu(text);
            
-            //Console.WriteLine("Dlzka textu " + length);
+            Console.WriteLine("Dlzka textu " + length);
         }
         public static int Dlzkatextu(string text)
         {
             return text.Length;
         }
+        //metoda ktora spocita samohlasky A/a
 
 
 
