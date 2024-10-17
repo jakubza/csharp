@@ -5,7 +5,7 @@ internal class Program
     static void Main(string[] args)
     {
         Hra kladnapostava = new Hra() { PlayerName = "Wizard", Power = 30, HP = 1000, Mana = 50, CritChance = 50 };
-        Hra zapornapostava = new Hra() { PlayerName = "Magician", Power = 45, HP = 1050, Mana = 50, CritChance = 10 };
+        Hra zapornapostava = new Hra() { PlayerName = "Magician", Power = 30, HP = 1050, Mana = 50, CritChance = 10 };
 
         Console.WriteLine("Zaporna postava HP:" + zapornapostava.HP);
         kladnapostava.Damage(zapornapostava);
@@ -31,7 +31,7 @@ internal class Program
                     Console.WriteLine("Kladna postava nema dostatok many");
                 }
 
-
+                //pouzitie many ZP
             }
             if (zapornapostava.HP <= 20)
             {
@@ -47,6 +47,23 @@ internal class Program
 
 
             }
+            //end
+
+            Random random = new Random();
+            int randomnumber = random.Next(0, 100);
+            if (randomnumber <= 5)
+            {
+                kladnapostava.RefilMana(50);
+                Console.WriteLine("-----Kladna postava was given the gift of god-----");
+            }
+
+            int randomnumber2 = random.Next(0, 100);
+            if (randomnumber2 <= 10) 
+            {
+                zapornapostava.RefilMana(50);
+                Console.WriteLine("-----Zaporna postava was given the gift of god------");
+            }
+
 
         }
         if (kladnapostava.HP < 0)
@@ -60,9 +77,12 @@ internal class Program
 
         }
 
-
     }
+
+
 }
+        
+
 
 
 

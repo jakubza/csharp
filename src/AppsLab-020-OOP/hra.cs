@@ -34,8 +34,8 @@ namespace Cvicenie_OPP_Hra
         public void Damage(Hra Hra)
         {
             int damagemultiplier = 1;
-            
-            
+
+
             Random random = new Random();
             int randomnumber = random.Next(0, 100);
             if (randomnumber <= this.CritChance)
@@ -67,6 +67,9 @@ namespace Cvicenie_OPP_Hra
             }
 
         }
-
-    }
+        public void RefilMana(int newmana)
+        {
+            this.Mana += newmana;
+        }
+    } 
 }
