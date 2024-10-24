@@ -4,27 +4,32 @@
     {
         static void Main(string[] args)
         {
-            List<string> Obcan = new List<string>();
-            while (true)
-            { 
-                Obcan.Add("Jozo");
-                Obcan.Add("Fero");
-                Obcan.Add("Andrej");
+            //Vytvorenie mesta
+            Mesto Bratislava = new Mesto("Bratislava") ;
+            Mesto Kosice = new Mesto("Kosice ");
 
-            }
-           
-            List<int> vek = new List<int>();
-            while (true)
-            {
-                vek.Add(19);
-                vek.Add(56);
-                vek.Add(69);
-            }
-
-
-
-
-        }
+            //vytvorenie obcanov Blavy 
+            Obcan obcan1 = new Obcan("Dezider Horvat",36);
+            Obcan obcan2 = new Obcan("Tatiana Kovacova", 59);
             
+            //Vytorenie Obcanov Kosic
+            Obcan obcan3 = new Obcan("Karol Horak", 18);
+            Obcan obcan4 = new Obcan("Simon Cellar", 55);
+
+            //Pridaj obcana do Blavy
+            Bratislava.PridajObcanadomesta(obcan1);
+            Bratislava.PridajObcanadomesta(obcan2);
+
+            //Pridaj obcanov do Kosic
+            Kosice.PridajObcanadomesta(obcan3);
+            Kosice.PridajObcanadomesta(obcan4);
+
+            //Vypis obcanov Bratislavy
+            Bratislava.VypisObcanov();
+
+            //Vypis obcanov Kosic
+            Kosice.VypisObcanov();
+        }
+
     }
 }

@@ -16,9 +16,9 @@ namespace Mesto_a_obcan
             this.meno = meno;
             this.vek = vek;
         }
-        public string Vipisinfo()
+        public void Vipisinfo()
         {
-            return Console.WriteLine("Meno" + meno + "vek" +  vek); 
+            Console.WriteLine("Meno: " + meno + " Vek " + vek);
         }
          
     }
