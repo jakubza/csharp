@@ -17,20 +17,28 @@
             Obcan obcan4 = new Obcan("Simon Cellar", 55);
 
             //Vytvorenie Lekarov Blavy
-            Lekari lekar1 = new Lekari("Pavol Kristus", 46);
+            Lekari lekar1 = new Lekari("Andrea Heiserova", 22);
             Lekari lekar2 = new Lekari("Eruk Kartmen", 35);
 
             //Vytvorenie Lekarov Kosic
-            Lekari lekar3 = new Lekari("Pavol Kristus", 46);
-            Lekari lekar4 = new Lekari("Eruk Kartmen", 35);
+            Lekari lekar3 = new Lekari("Partik Popjak", 46);
+            Lekari lekar4 = new Lekari("Rastislav Kolenic", 35);
 
             //Vypis Ucitelov Blavy
-            Ucitelia ucitel1 = new Ucitelia("Placeholder", 0);
-            Ucitelia ucitel2 = new Ucitelia("Placeholder", 0);
+            Ucitelia ucitel1 = new Ucitelia("Nina Tucikova", 21);
+            Ucitelia ucitel2 = new Ucitelia("Branko Dobrovodsky", 45);
 
-            Ucitelia ucitel3 = new Ucitelia("Placeholder", 0);
-            Ucitelia ucitel4 = new Ucitelia("Placeholder", 0);
+            //Vypis Ucitelov Kosic
+            Ucitelia ucitel3 = new Ucitelia("Imrich Mokry", 64);
+            Ucitelia ucitel4 = new Ucitelia("Lenka Dobrovodska", 35);
 
+            //Vypis Elektrikarov Blavy
+            Elekrikari elektrikar1 = new Elekrikari("Šimon Medvedik", 35);
+            Elekrikari elektrikar2 = new Elekrikari("Jozef Slavik", 50);
+
+            ////Vypis Elektrikarov Kosic
+            Elekrikari elektrikar3 = new Elekrikari("Teodor Skalicky", 23);
+            Elekrikari elektrikar4 = new Elekrikari("Bozena Zahorecova", 31);
 
             //Pridaj obcana do Blavy
             Bratislava.PridajObcanadomesta(obcan1);
@@ -40,9 +48,17 @@
             Bratislava.Pridajlekaradomesta(lekar1);
             Bratislava.Pridajlekaradomesta(lekar2);
 
-            //
+            //Pridaj Ucitela do Blavy
             Bratislava.PridajUcitelaDoMesta(ucitel1);
             Bratislava.PridajUcitelaDoMesta(ucitel2);
+
+            //Pridaj Elektrikara do Blavy
+            Bratislava.PridajElektrikaraDeMesta(elektrikar1);
+            Bratislava.PridajElektrikaraDeMesta(elektrikar2);
+
+            //Pridaj Elektrikara do Kosic
+            Kosice.PridajElektrikaraDeMesta(elektrikar3);
+            Kosice.PridajElektrikaraDeMesta(elektrikar4);
 
             //Pridaj obcanov do Kosic
             Kosice.PridajObcanadomesta(obcan3);
@@ -52,7 +68,7 @@
             Kosice.Pridajlekaradomesta(lekar3);
             Kosice.Pridajlekaradomesta(lekar4);
 
-
+            //Pridaj Ucitela do Kosic
             Kosice.PridajUcitelaDoMesta(ucitel3);
             Kosice.PridajUcitelaDoMesta(ucitel4);
 

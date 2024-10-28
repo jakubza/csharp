@@ -12,15 +12,19 @@ namespace Mesto_a_obcan
         public List<Obcan> obcania { get; set; }
         public List<Lekari> lekari { get; set; }
         public List<Ucitelia> ucitelia { get; set; }
-
+        public List<Elekrikari> elektrikari { get; set; }
         public Mesto(string nazovMesta)
         {
             NazovMesta = nazovMesta;
             obcania = new List<Obcan>();
             lekari = new List<Lekari>();
             ucitelia = new List<Ucitelia>();
+            elektrikari = new List<Elekrikari>();
         }
-
+        public void PridajElektrikaraDeMesta (Elekrikari elektrikar)
+        {
+            elektrikari.Add(elektrikar);
+        }
         public void PridajUcitelaDoMesta(Ucitelia ucitel)
         {
             ucitelia.Add(ucitel);
@@ -49,12 +53,17 @@ namespace Mesto_a_obcan
             {
                 lekar.Liecenie();
             }
+            Console.WriteLine("\n");
             foreach (var ucitel in ucitelia)
             {
                 ucitel.Ucenie();
             }
-
-
+            Console.WriteLine("\n");
+            foreach (var elektrikar in elektrikari )
+            {
+                elektrikar.Elektrikovanie();
+            }
+            Console.WriteLine("\n");
 
         }
     }
