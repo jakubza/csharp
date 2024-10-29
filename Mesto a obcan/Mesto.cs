@@ -30,12 +30,10 @@ namespace Mesto_a_obcan
             ucitelia.Add(ucitel);
         }
         
-
         public void Pridajlekaradomesta(Lekari lekar)
         {
             lekari.Add(lekar);
         }
-        
         
         public void PridajObcanadomesta(Obcan obcan)
         {
@@ -48,22 +46,23 @@ namespace Mesto_a_obcan
             {
                 obcan.Vipisinfo();
             }
-            Console.WriteLine("\n");
+            Console.WriteLine("Obcania mesta " + NazovMesta);
+            Console.WriteLine();
             foreach (var lekar in lekari)
             {
                 lekar.Liecenie();
             }
-            Console.WriteLine("\n");
+            Console.WriteLine();
             foreach (var ucitel in ucitelia)
             {
                 ucitel.Ucenie();
             }
-            Console.WriteLine("\n");
+            Console.WriteLine();
             foreach (var elektrikar in elektrikari )
             {
                 elektrikar.Elektrikovanie();
             }
-            Console.WriteLine("\n");
+            Console.WriteLine();
 
         }
     }

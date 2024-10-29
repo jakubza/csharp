@@ -30,7 +30,7 @@
 
             //Vypis Ucitelov Kosic
             Ucitelia ucitel3 = new Ucitelia("Imrich Mokry", 64);
-            Ucitelia ucitel4 = new Ucitelia("Lenka Dobrovodska", 35);
+            Ucitelia ucitel4 = new Ucitelia("Sergej Stokurev", 35);
 
             //Vypis Elektrikarov Blavy
             Elekrikari elektrikar1 = new Elekrikari("Šimon Medvedik", 35);
