@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace Mesto_a_obcan
 {
-    internal class Lekari
+    public class Lekari : Obcan
     {
-        public string meno { get; set; }
-        public int vek { get; set;}
-
-        public Lekari(string meno, int vek)
-        {
-            this.meno = meno;
-            this.vek = vek;
-        }
-
-        public void Liecenie()
+        public Lekari(string meno, int vek) : base(meno, vek) { }
+        public new void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " Lieci");
         }

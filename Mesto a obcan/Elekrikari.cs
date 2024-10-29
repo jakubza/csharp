@@ -6,20 +6,16 @@ using System.Threading.Tasks;
 
 namespace Mesto_a_obcan
 {
-    internal class Elekrikari
+    public class Elekrikari : Obcan
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
-
-        public Elekrikari(string meno, int vek)
+        public string typkablu;
+       public Elekrikari(string meno, int vek, string typkablu) : base(meno, vek)
         {
-            this.meno = meno;
-            this.vek = vek;
+            this.typkablu = typkablu;
         }
-
-        public void Elektrikovanie()
+        public new void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje");
+            Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje s" + typkablu);
         }
     }
 }

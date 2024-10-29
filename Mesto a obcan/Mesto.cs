@@ -6,35 +6,16 @@ using System.Threading.Tasks;
 
 namespace Mesto_a_obcan
 {
-    internal class Mesto
+     class Mesto
     {
         public string NazovMesta { get; set; }
         public List<Obcan> obcania { get; set; }
-        public List<Lekari> lekari { get; set; }
-        public List<Ucitelia> ucitelia { get; set; }
-        public List<Elekrikari> elektrikari { get; set; }
-        public Mesto(string nazovMesta)
+        
+       public Mesto(string nazovMesta)
         {
-            NazovMesta = nazovMesta;
+            this.NazovMesta = nazovMesta;
             obcania = new List<Obcan>();
-            lekari = new List<Lekari>();
-            ucitelia = new List<Ucitelia>();
-            elektrikari = new List<Elekrikari>();
         }
-        public void PridajElektrikaraDeMesta (Elekrikari elektrikar)
-        {
-            elektrikari.Add(elektrikar);
-        }
-        public void PridajUcitelaDoMesta(Ucitelia ucitel)
-        {
-            ucitelia.Add(ucitel);
-        }
-        
-        public void Pridajlekaradomesta(Lekari lekar)
-        {
-            lekari.Add(lekar);
-        }
-        
         public void PridajObcanadomesta(Obcan obcan)
         {
             obcania.Add(obcan);
@@ -46,23 +27,7 @@ namespace Mesto_a_obcan
             {
                 obcan.Vipisinfo();
             }
-            Console.WriteLine("Obcania mesta " + NazovMesta);
-            Console.WriteLine();
-            foreach (var lekar in lekari)
-            {
-                lekar.Liecenie();
-            }
-            Console.WriteLine();
-            foreach (var ucitel in ucitelia)
-            {
-                ucitel.Ucenie();
-            }
-            Console.WriteLine();
-            foreach (var elektrikar in elektrikari )
-            {
-                elektrikar.Elektrikovanie();
-            }
-            Console.WriteLine();
+           
 
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mesto_a_obcan
 {
-    internal class Obcan
+    public class Obcan
     {
         public string meno { get; set; }
         public int vek { get; set; }
@@ -18,8 +18,12 @@ namespace Mesto_a_obcan
         }
         public void Vipisinfo()
         {
-            Console.WriteLine("Meno: " + meno + " Vek " + vek);
+            Console.WriteLine("Meno: " + meno);
         }
          
+        public void VypisVek()
+        {
+            Console.WriteLine("Vek" + vek);
+        }
     }
 }
