@@ -14,9 +14,10 @@ namespace Mesto_a_obcan
         { 
            this.pocetkablov = pocetkablov; 
         }
-        public new void VypisInfo()
+        public override void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje s" + typkablu + "Pocet kablov" + pocetkablov) ;
+            Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje s" 
+                + "Pocet kablov") ;
         }
 
     }

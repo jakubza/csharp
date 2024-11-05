@@ -25,7 +25,7 @@ namespace Mesto_a_obcan
             Console.WriteLine("Obcania mesta " + NazovMesta);
             foreach (var obcan in obcania) 
             {
-                obcan.Vipisinfo();
+                obcan.VypisInfo();
             }
            
 

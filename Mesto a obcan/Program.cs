@@ -5,16 +5,30 @@
         static void Main(string[] args)
         {
             //Vytvorenie mesta
-            Mesto Bratislava = new Mesto("Bratislava") ;
-            
-            //Obcania 
-            Lekari lek = new Lekari("Imrich",vek : 25);
-            Elekrikari ele = new Elekrikari( "Baca", 36, "medenny");
-            SenorElektrikar sen = new SenorElektrikar("Sergej", 55, "medeny", 495916);
+            Mesto Bratislava = new Mesto("Bratislava");
 
-            Bratislava.PridajObcanadomesta(lek);
-            Bratislava.PridajObcanadomesta(ele);
-            Bratislava.PridajObcanadomesta(sen);
+            //Obcania 
+            
+           
+
+           /*while (Bratislava.obcania.Count < 31)
+            {
+                Obcan o = GeneratorObcanov.GenerujObcana();
+                Bratislava.PridajObcanadomesta(o);
+            }
+            
+
+            for (int i = 0; i < 31; i++)
+            {
+                Obcan o = GeneratorObcanov.GenerujObcana();
+                Bratislava.PridajObcanadomesta(o);
+            }*/
+            
+            while (Bratislava.obcania.Count < 31)
+            {
+                Elekrikari o = GeneratorObcanov.GenerujJayzk();
+                Bratislava.PridajObcanadomesta(o);
+            }
 
 
 

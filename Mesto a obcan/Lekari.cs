@@ -8,7 +8,10 @@ namespace Mesto_a_obcan
 {
     public class Lekari : Obcan
     {
-        public Lekari(string meno, int vek) : base(meno, vek) { }
+        public Lekari(string meno, int vek) : base(meno, vek) 
+        { 
+        
+        }
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " Lieci");

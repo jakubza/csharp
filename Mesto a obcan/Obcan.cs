@@ -16,14 +16,11 @@ namespace Mesto_a_obcan
             this.meno = meno;
             this.vek = vek;
         }
-        public void Vipisinfo()
+        public virtual void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno);
+            Console.WriteLine("Meno: " + meno + " Vek " + vek);
         }
-         
-        public void VypisVek()
-        {
-            Console.WriteLine("Vek" + vek);
-        }
+
+
     }
 }
