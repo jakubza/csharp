@@ -6,8 +6,10 @@
         {
             //Vytvorenie mesta
             Mesto Bratislava = new Mesto("Bratislava") ;
-            Lekari lek = new Lekari("Imrich", 25);
-            Elekrikari ele = new Elekrikari("Baca", 36, "medenny");
+            
+            //Obcania 
+            Lekari lek = new Lekari("Imrich",vek : 25);
+            Elekrikari ele = new Elekrikari( "Baca", 36, "medenny");
             SenorElektrikar sen = new SenorElektrikar("Sergej", 55, "medeny", 495916);
 
             Bratislava.PridajObcanadomesta(lek);
@@ -17,10 +19,9 @@
 
 
             //Vypis obcanov Bratislavy
-            Bratislava.VypisObcanov();
-
-      
+            Bratislava.VypisObcanov();    
             
+           
 
            
 
