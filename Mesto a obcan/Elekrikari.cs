@@ -8,14 +8,14 @@ namespace Mesto_a_obcan
 {
     public class Elekrikari : Obcan
     {
-        public string programovacijazyk;
-       public Elekrikari(string meno, int vek, string programovacijazyk) : base(meno, vek)
+        protected string typkablu { get; set; }
+       public Elekrikari(string meno, int vek, string typkablu) : base(meno, vek)
         {
-           this.programovacijazyk = programovacijazyk;
+           this.typkablu = typkablu;
         }
         public override void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno + " Vek " + vek + " " +  programovacijazyk);
+            Console.WriteLine("Meno: " + meno + " Vek " + vek + " " +  typkablu);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Mesto_a_obcan
 {
     public class SenorElektrikar : Elekrikari 
     {
-        public int pocetkablov;
+        private int pocetkablov;
         public SenorElektrikar(string meno, int vek, string typkablu, int pocetkablov) : base(meno, vek, typkablu) 
         { 
            this.pocetkablov = pocetkablov; 

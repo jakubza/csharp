@@ -9,8 +9,8 @@ namespace Mesto_a_obcan
     public static class GeneratorObcanov
     {
         private static string[] mena = { "Igor", "Anna", "Peter", "Jana", "Martin", "Lucia", "Tomáš", "Eva", "Michal", "Zuzana", "Marek", "Katarína", "Andrej", "Lenka", "Patrik",
-            "Monika", "Filip", "Veronika", "Richard", "Simona", "Róbert", "Mária", "Jakub", "Barbora", "Adam", "Dominika", "Lukáš", "Daniela", "Vladimír", "Nikola" };
-        private static string[] programovaciejazyky = { "C#", "Python", "C++", "Java", "C" };
+            "Monika", "Filip", "Veronika", "Richard", "Stary", "Róbert", "Mária", "Jakub", "Barbora", "Adam", "Dominika", "Lukáš", "Daniela", "2SekundovyMato", "Nikola" };
+        private static string[] programovaciejazyky = { "Med", "Zerte olovo svine", "Opticky", "Zeleny", "Nekabluje" };
         public static Obcan GenerujObcana()
         {
             Random r = new Random();

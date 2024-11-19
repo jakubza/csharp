@@ -24,7 +24,7 @@
                 Bratislava.PridajObcanadomesta(o);
             }*/
             
-            while (Bratislava.obcania.Count < 31)
+            while (Bratislava.Obcania.Count < 31)
             {
                 Elekrikari o = GeneratorObcanov.GenerujJayzk();
                 Bratislava.PridajObcanadomesta(o);
@@ -33,13 +33,14 @@
 
 
             //Vypis obcanov Bratislavy
-            Bratislava.VypisObcanov();    
+            Bratislava.VypisObcanov();   
             
-           
+           Console.WriteLine($" ___   __  ____________  ____  ___ _____   ___    ____ \r\n   /   | / / / /_  __/ __ \\/ __ )/   /__  /  /   |  / __ \\\r\n  / /| |/ / / / / / / / / / __  / /| | / /  / /| | / /_/ /\r\n / ___ / /_/ / / / / /_/ / /_/ / ___ |/ /__/ ___ |/ _, _/ \r\n/_/  |_\\____/ /_/  \\____/_____/_/  |_/____/_/  |_/_/ |_|
 
-           
 
-            
+
+
+
 
         }
 

@@ -8,8 +8,19 @@ namespace Mesto_a_obcan
 {
     public class Obcan
     {
-        public string meno { get; set; }
-        public int vek { get; set; }
+        protected string meno;
+        protected int vek;
+
+        public string Meno
+        {
+            get { return meno; }
+            set { meno = value; }
+        }
+        public int Vek
+        {
+            get { return vek; }
+            set { vek = value; }
+        }
 
         public Obcan(string meno, int vek)
         {
