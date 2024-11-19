@@ -12,19 +12,29 @@
             new Student { Name = "Charlie", Age = 18 }
             };
 
-            /* List<Student> tinedzeriStudenti_stary = new List<Student>();
+            
+            //Prehladavanie list, ziskali sme vsetkych studentov s menom Anna
+            List<Student> tinedzeriStudenti_stary = new List<Student>();
+             foreach(Student student in students) 
+             {
+                 if (student.Name.Contains("Anna"))
+                 {
+                     tinedzeriStudenti_stary.Add(student);
+                 }
+             }
+            /*
+             List<Student> tinedzeristudenti = students.Where(student =>  student.Age < 20).ToList();
+             foreach (Student student in tinedzeriStudenti_stary)
+             {
+                 Console.WriteLine($"Stary sposob: Student {student.Name} ma {student.Age} a je tinedzer");
+             }
+            List<Student> tinedzeriStudenti_stary = new List<Student>();
              foreach(Student student in students) 
              {
                  if (student.Age < 20)
                  {
                      tinedzeriStudenti_stary.Add(student);
                  }
-             }
-
-             List<Student> tinedzeristudenti = students.Where(student =>  student.Age < 20).ToList();
-             foreach (Student student in tinedzeriStudenti_stary)
-             {
-                 Console.WriteLine($"Stary sposob: Student {student.Name} ma {student.Age} a je tinedzer");
              }*/
 
 
