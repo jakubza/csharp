@@ -10,6 +10,11 @@ namespace Mesto_a_obcan
     public class SenorElektrikar : Elekrikari 
     {
         private int pocetkablov;
+        public int PocetKablov
+        {
+            get { return pocetkablov; }
+            set { pocetkablov = value; }
+        }
         public SenorElektrikar(string meno, int vek, string typkablu, int pocetkablov) : base(meno, vek, typkablu) 
         { 
            this.pocetkablov = pocetkablov; 

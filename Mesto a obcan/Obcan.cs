@@ -10,7 +10,13 @@ namespace Mesto_a_obcan
     {
         protected string meno;
         protected int vek;
+        protected StavObcana stav;
 
+        public StavObcana Stav
+        {
+            get { return stav; }
+            set { stav = value; }
+        }
         public string Meno
         {
             get { return meno; }
@@ -29,9 +35,20 @@ namespace Mesto_a_obcan
         }
         public virtual void VypisInfo()
         {
-            Console.WriteLine("Meno: " + meno + " Vek " + vek);
+            Console.WriteLine("Meno: " + meno + " Vek " + vek + " Stav " + stav);
         }
 
 
+
     }
-}
+
+    public enum StavObcana
+    {
+        Domaci,
+        Cudzinec,
+        Turista
+    }
+} 
+
+
+

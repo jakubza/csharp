@@ -10,7 +10,7 @@ namespace Mesto_a_obcan
     {
         private static string[] mena = { "Igor", "Anna", "Peter", "Jana", "Martin", "Lucia", "Tomáš", "Eva", "Michal", "Zuzana", "Marek", "Katarína", "Andrej", "Lenka", "Patrik",
             "Monika", "Filip", "Veronika", "Richard", "Stary", "Róbert", "Mária", "Jakub", "Barbora", "Adam", "Dominika", "Lukáš", "Daniela", "2SekundovyMato", "Nikola" };
-        private static string[] programovaciejazyky = { "Med", "Zerte olovo svine", "Opticky", "Zeleny", "Nekabluje" };
+        private static string[] typykablu = { "Med", "Zerte olovo svine", "Opticky", "Zeleny", "Nekabluje" };
         public static Obcan GenerujObcana()
         {
             Random r = new Random();
@@ -27,10 +27,16 @@ namespace Mesto_a_obcan
             int pozicia = r2.Next(mena.Length);
             string meno = mena[pozicia];
             int vek = r2.Next(15, 116);
-            int pozicia2 = r2.Next(programovaciejazyky.Length);
-            string programovacijazyk = programovaciejazyky[pozicia2];
-            Elekrikari programator = new Elekrikari(meno,vek, programovacijazyk);
-            return programator;
+            int pozicia2 = r2.Next(typykablu.Length);
+            string typkablu = typykablu[pozicia2];
+            Elekrikari elektrikar = new Elekrikari(meno,vek, typkablu);
+            int dlzkaEnum = (Enum.GetValues <StavObcana>().Length);
+            int nahodnyIndex = r2.Next(dlzkaEnum);
+            elektrikar.Stav = (StavObcana)nahodnyIndex;
+
+            //elektrikar.Stav = StavObcana.Cudzinec;
+            
+            return elektrikar;
         }
     }
     
