@@ -22,7 +22,7 @@ namespace Mesto_a_obcan
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje s" 
-                + "Pocet kablov") ;
+                + "Pocet kablov" + " Stav: " + stav) ;
         }
 
     }
