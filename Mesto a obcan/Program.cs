@@ -1,4 +1,6 @@
-﻿namespace Mesto_a_obcan
+﻿using System.Text.Json;
+
+namespace Mesto_a_obcan
 {
     internal class Program
     {
@@ -30,7 +32,10 @@
                 Bratislava.PridajObcanadomesta(o);
             }
 
+            //Blava.json
 
+            string subor = "mesto.jsob";
+            Bratislava.UlozDoSuboru(subor);
 
             //Vypis obcanov Bratislavy
             Bratislava.VypisObcanov();

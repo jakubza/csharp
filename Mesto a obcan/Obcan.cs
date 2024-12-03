@@ -33,6 +33,10 @@ namespace Mesto_a_obcan
             this.meno = meno;
             this.vek = vek;
         }
+        public Obcan()
+        {
+
+        }
         public virtual void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " Stav " + stav);

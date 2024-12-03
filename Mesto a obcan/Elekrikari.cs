@@ -14,11 +14,16 @@ namespace Mesto_a_obcan
         {
             get { return typkablu; }
             set { typkablu = value; }
+
         }
-       public Elekrikari(string meno, int vek, string typkablu) : base(meno, vek)
+
+       
+        public Elekrikari(string meno, int vek, string typkablu) : base(meno, vek)
         {
            this.typkablu = typkablu;
         }
+
+        
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " " + typkablu + " Stav: " + stav);

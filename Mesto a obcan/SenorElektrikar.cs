@@ -19,6 +19,10 @@ namespace Mesto_a_obcan
         { 
            this.pocetkablov = pocetkablov; 
         }
+        public SenorElektrikar()
+        { 
+        
+        }
         public override void VypisInfo()
         {
             Console.WriteLine("Meno: " + meno + " Vek " + vek + " Elektrikuje s" 
