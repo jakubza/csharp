@@ -117,11 +117,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kniha-OOP", "Kniha-OOP\Knih
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tim_OPP", "Tim_OPP\Tim_OPP.csproj", "{5D6247B9-C3BB-4FDA-BAA0-C55133F38C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cvicenie_Vynimky", "Cvicenie_Vynimky\Cvicenie_Vynimky.csproj", "{16A4C63E-7B17-4C5D-9D80-ABBA26CCDEE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cvicenie_Vynimky", "Cvicenie_Vynimky\Cvicenie_Vynimky.csproj", "{16A4C63E-7B17-4C5D-9D80-ABBA26CCDEE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projekt", "Projekt", "{01749CBD-8CE8-42EE-9642-4B58D3E6E5F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autobazar", "Autobazar\Autobazar.csproj", "{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autobazar", "Autobazar\Autobazar.csproj", "{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kniznica pls nie", "kniznica pls nie\kniznica pls nie.csproj", "{1359F19A-B897-41AA-BA21-3212DBBE5EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -805,6 +807,18 @@ Global
 		{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6}.Release|x64.Build.0 = Release|Any CPU
 		{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6}.Release|x86.ActiveCfg = Release|Any CPU
 		{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6}.Release|x86.Build.0 = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|x64.Build.0 = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Debug|x86.Build.0 = Debug|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|x64.ActiveCfg = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|x64.Build.0 = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -867,6 +881,7 @@ Global
 		{16A4C63E-7B17-4C5D-9D80-ABBA26CCDEE0} = {2F0E47F2-96C0-40C8-BBF0-438A7EDC1CEB}
 		{01749CBD-8CE8-42EE-9642-4B58D3E6E5F5} = {2F0E47F2-96C0-40C8-BBF0-438A7EDC1CEB}
 		{CB2E2BC2-0D53-4764-B8B0-FCD6A999BDF6} = {01749CBD-8CE8-42EE-9642-4B58D3E6E5F5}
+		{1359F19A-B897-41AA-BA21-3212DBBE5EBE} = {2F0E47F2-96C0-40C8-BBF0-438A7EDC1CEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C50C64B-7126-4A88-B950-9B6071C82736}

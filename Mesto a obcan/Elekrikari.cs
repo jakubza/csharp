@@ -22,7 +22,11 @@ namespace Mesto_a_obcan
         {
            this.typkablu = typkablu;
         }
+        public Elekrikari()
+        {
 
+        }
+      
         
         public override void VypisInfo()
         {
