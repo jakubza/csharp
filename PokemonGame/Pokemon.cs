@@ -16,7 +16,7 @@ namespace PokemonGame
             Name = name;
             Health = 100;
         }
-        public int Attack()
+        public int Attack1()
         {
             Random rnd = new Random();
             return rnd.Next(10, 91);
@@ -30,6 +30,16 @@ namespace PokemonGame
         {
             Random rnd = new Random();
             return rnd.Next(40, 60);
+        }
+        public bool TakeDamage(int damage)
+        {
+            Health -= damage;
+            if (Health < 0)
+            {
+                Health = 0;
+                return false;
+            }
+            return true;
         }
         public int Heal()
         {

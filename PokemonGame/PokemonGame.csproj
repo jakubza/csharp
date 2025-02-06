@@ -9,14 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Braithwaite-Manor.png" />
     <None Remove="images\Artuir.png" />
+    <None Remove="images\background.png" />
     <None Remove="images\charizardos.png" />
     <None Remove="images\duch.png" />
     <None Remove="images\mimikyu.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Braithwaite-Manor.png" />
     <Resource Include="images\Artuir.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\charizardos.png">

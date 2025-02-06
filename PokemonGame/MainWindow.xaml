@@ -10,7 +10,5 @@
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <Image Margin="664,70,54,34" Source="/images/Artuir.png" Stretch="Fill"/>
-        <Image Margin="10,274,674,10" Source="/images/duch.png" Stretch="Fill"/>
     </Grid>
 </Window>
